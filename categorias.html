@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Librería Aurora | Categorías</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <span class="brand__logo" aria-hidden="true">📚</span>
+        <span class="brand__name">Librería Aurora</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Inicio</a></li>
+          <li class="nav__item"><a class="nav__link is-active" href="categorias.html">Categorías</a></li>
+          <li class="nav__item"><a class="nav__link" href="productos.html">Productos</a></li>
+          <li class="nav__item"><a class="nav__link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <h1 class="section__title">Categorías</h1>
+          <p class="section__subtitle">Elige una categoría para ver productos filtrados.</p>
+        </header>
+
+        <section class="grid grid--3" aria-label="Lista de categorías">
+          <article class="category-card">
+            <img class="category-card__img" src="assets/img/categorias/ficcion.jpg" alt="Categoría Ficción" />
+            <div class="category-card__body">
+              <h2 class="category-card__title">Ficción</h2>
+              <p class="category-card__text">Novelas, aventuras, misterio y fantasía.</p>
+              <a class="btn btn--small" href="productos.html?cat=ficcion">Ver Ficción</a>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img class="category-card__img" src="assets/img/categorias/educacion.jpg" alt="Categoría Educación" />
+            <div class="category-card__body">
+              <h2 class="category-card__title">Educación</h2>
+              <p class="category-card__text">Aprendizaje, guías y libros académicos.</p>
+              <a class="btn btn--small" href="productos.html?cat=educacion">Ver Educación</a>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img class="category-card__img" src="assets/img/categorias/infantil.jpg" alt="Categoría Infantil" />
+            <div class="category-card__body">
+              <h2 class="category-card__title">Infantil</h2>
+              <p class="category-card__text">Cuentos, valores y lecturas para niños.</p>
+              <a class="btn btn--small" href="productos.html?cat=infantil">Ver Infantil</a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Librería Aurora.</p>
+      <p class="footer-links">
+        <a href="index.html">Inicio</a> · <a href="productos.html">Productos</a> · <a href="contacto.html">Contacto</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
