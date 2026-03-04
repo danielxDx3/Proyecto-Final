@@ -16,16 +16,18 @@ Incluye cuatro páginas conectadas, diseño responsive, filtrado por categoría 
 
 ## 📸 Capturas de Pantalla
 ### Página de Inicio
-(Agregar captura)
+<img width="1321" height="746" alt="image" src="https://github.com/user-attachments/assets/b064af97-59d8-4b21-90f1-3c619814cfa9" />
 
 ### Página de Categorías
-(Agregar captura)
+<img width="1412" height="722" alt="image" src="https://github.com/user-attachments/assets/16fcbbaf-db59-4135-9faf-8091c186456c" />
+
 
 ### Página de Productos
-(Agregar captura)
+<img width="1422" height="758" alt="image" src="https://github.com/user-attachments/assets/719372c4-2b80-408a-8ffa-ca6a4c218afc" />
+
 
 ### Página de Contacto
-(Agregar captura)
+<img width="1382" height="628" alt="image" src="https://github.com/user-attachments/assets/d8b2c4e8-821f-4587-953c-189b36e7e304" />
 
 ## 🌍 Enlace al sitio desplegado en GitHub Pages
 (Colocar aquí el enlace público)
