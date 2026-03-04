@@ -4,11 +4,22 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   line-height: 1.6;
   background-color: #f4f6f9;
   color: #333;
+  padding-top: 80px; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .container {
@@ -19,7 +30,14 @@ body {
 
 .site-header {
   background-color: #1e2a38;
-  padding: 1rem 0;
+  padding: 16px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header-content {
@@ -33,28 +51,30 @@ body {
   align-items: center;
   text-decoration: none;
   color: white;
-  font-size: 1.3rem;
+  font-size: 21px;
   font-weight: bold;
-  gap: 10px;
 }
 
 .brand__logo {
-  width: 50px;
-  height: auto;
-  border-radius: 8px; 
+  width: 120px;
+  border-radius: 8%;
+}
+
+.brand__name {
+  padding: 10px;
 }
 
 .nav__list {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 .nav__link {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: 0.3s;
 }
 
 .nav__link:hover {
@@ -67,41 +87,36 @@ body {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 48px 0;
 }
 
 .section__header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .section__title {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 32px;
+  margin-bottom: 8px;
   color: #1e2a38;
 }
 
 .section__subtitle {
   color: #666;
-  font-size: 1rem;
 }
 
 .grid {
   display: grid;
-  gap: 2rem;
-}
-
-.grid--3 {
+  gap: 32px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* ===== TARJETAS ===== */
 .category-card {
   background: white;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s;
 }
 
 .category-card:hover {
@@ -111,37 +126,37 @@ body {
 
 .category-card__img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 1px solid #ddd;
+  height: 160px;
+  object-fit: contain;
+  background-color: #f8f8f8;
+  padding: 15px;
 }
 
 .category-card__body {
-  padding: 1rem 1.2rem;
+  padding: 16px;
 }
 
 .category-card__title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   color: #1e2a38;
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 
 .category-card__text {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+  font-size: 14px;
+  margin-bottom: 12px;
   color: #555;
 }
 
-/* ===== BOTONES ===== */
 .btn {
   display: inline-block;
   background-color: #f4c430;
   color: #1e2a38;
-  padding: 0.6rem 1rem;
+  padding: 10px 16px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -149,41 +164,68 @@ body {
 }
 
 .btn--small {
-  font-size: 0.85rem;
+  font-size: 14px;
 }
 
-/* ===== FOOTER ===== */
 .site-footer {
   background-color: #1e2a38;
   color: white;
-  padding: 1.5rem 0;
-  margin-top: 2rem;
+  padding: 24px 0;
+  margin-top: 32px;
 }
 
 .footer-content {
   text-align: center;
-  font-size: 0.9rem;
 }
 
 .footer-links a {
   color: #f4c430;
   text-decoration: none;
-  margin: 0 5px;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+
   .header-content {
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
   }
 
   .nav__list {
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .nav__item {
+    width: 100%;
+  }
+
+  .nav__link {
+    display: block;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card__img {
+    height: 140px;
+    padding: 10px;
+  }
+
+  .section__title {
+    font-size: 28px;
+  }
+
+  .section__subtitle {
+    font-size: 14px;
   }
 }

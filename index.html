@@ -8,11 +8,10 @@
 </head>
 
 <body>
-
   <header class="site-header">
     <div class="container header-content">
       <a class="brand" href="index.html" aria-label="Ir al inicio">
-        <img src="assets/img/Logo librería.jpg" alt="Logo Librería Aurora" class="brand__logo">
+        <img src="assets/img/banners/Logo librería.jpg" alt="Logo Librería Aurora" class="brand__logo">
         <span class="brand__name">Librería Aurora</span>
       </a>
 
@@ -28,8 +27,9 @@
   </header>
 
   <main>
+    <!-- HERO / BANNER -->
     <section class="hero" aria-label="Sección principal">
-      <div class="container">
+      <div class="container hero__content">
         <article class="hero__text">
           <h1 class="hero__title">Tu próxima lectura empieza aquí</h1>
           <p class="hero__subtitle">
@@ -48,6 +48,16 @@
             <li class="badge">💳 Pago seguro</li>
           </ul>
         </article>
+
+        <figure class="hero__media">
+          <!-- Reemplaza la imagen por tu banner real -->
+          <img
+            src="assets/img/banners/banner-libreria.jpg"
+            alt="Estantería con libros en una librería"
+            class="hero__img"
+          />
+          <figcaption class="sr-only">Banner principal de la Librería Aurora</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -65,7 +75,7 @@
           <article class="card">
             <img
               class="card__img"
-              src="assets/img/Portada historia de dos ciudades.jpg"
+              src="assets/img/productos/Portada historia de dos ciudades.jpg"
               alt="Portada del libro Historia de dos ciudades"
             />
             <div class="card__body">
@@ -79,12 +89,12 @@
           <article class="card">
             <img
               class="card__img"
-              src="assets/img/Portada El principito.jpg"
+              src="assets/img/productos/Portada El principito.jpg"
               alt="Portada del libro El Principito"
             />
             <div class="card__body">
               <h3 class="card__title">El Principito</h3>
-              <p class="card__text">Una historia corta con un mensaje enorme.</p>
+              <p class="card__text">Ensayos cortos para pensar, aprender y crear.</p>
               <p class="card__price">$9.50</p>
               <a class="card__link" href="productos.html">Ver en productos →</a>
             </div>
@@ -93,7 +103,7 @@
           <article class="card">
             <img
               class="card__img"
-              src="assets/img/Portada Dune.jpg"
+              src="assets/img/productos/Portada Dune.jpg" width="190px"
               alt="Portada del libro DUNE"
             />
             <div class="card__body">
@@ -117,7 +127,11 @@
 
         <div class="grid grid--3">
           <article class="category-card">
-            <img class="category-card__img" src="assets/img/categorias/ficcion.jpg" alt="Imagen representativa de Ficción" />
+            <img
+              class="category-card__img"
+              src="assets/img/categorias/ficcion.png" 
+              alt="Imagen representativa de Ficción"
+            />
             <div class="category-card__body">
               <h3 class="category-card__title">Ficción</h3>
               <p class="category-card__text">Novelas, aventuras y mundos imaginarios.</p>
@@ -126,7 +140,11 @@
           </article>
 
           <article class="category-card">
-            <img class="category-card__img" src="assets/img/categorias/educacion.jpg" alt="Imagen representativa de Educación" />
+            <img
+              class="category-card__img"
+              src="assets/img/categorias/educacion.png" 
+              alt="Imagen representativa de Educación"
+            />
             <div class="category-card__body">
               <h3 class="category-card__title">Educación</h3>
               <p class="category-card__text">Aprende con guías, recursos y libros académicos.</p>
@@ -135,7 +153,11 @@
           </article>
 
           <article class="category-card">
-            <img class="category-card__img" src="assets/img/categorias/infantil.jpg" alt="Imagen representativa de Infantil" />
+            <img
+              class="category-card__img"
+              src="assets/img/categorias/infantil.png"
+              alt="Imagen representativa de Infantil"
+            />
             <div class="category-card__body">
               <h3 class="category-card__title">Infantil</h3>
               <p class="category-card__text">Cuentos y lecturas para los más pequeños.</p>
@@ -150,7 +172,9 @@
     <section class="cta" aria-label="Llamado a la acción">
       <div class="container cta__content">
         <h2 class="cta__title">¿Necesitas ayuda para elegir un libro?</h2>
-        <p class="cta__text">Escríbenos y te recomendaremos opciones según tus gustos.</p>
+        <p class="cta__text">
+          Escríbenos y te recomendaremos opciones según tus gustos.
+        </p>
         <a class="btn btn--primary" href="contacto.html">Ir a contacto</a>
       </div>
     </section>
@@ -167,6 +191,9 @@
     </div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script>
+    // Año automático (pequeño detalle bonito)
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
