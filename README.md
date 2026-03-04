@@ -30,4 +30,4 @@ Incluye cuatro páginas conectadas, diseño responsive, filtrado por categoría 
 <img width="1382" height="628" alt="image" src="https://github.com/user-attachments/assets/d8b2c4e8-821f-4587-953c-189b36e7e304" />
 
 ## 🌍 Enlace al sitio desplegado en GitHub Pages
-(https://danielxdx3.github.io/Proyecto-Final/)
+https://danielxdx3.github.io/Proyecto-Final/
